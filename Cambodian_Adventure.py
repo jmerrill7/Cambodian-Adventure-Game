@@ -8,15 +8,15 @@ One "win" condition contains a bonus for exceptional decision making.'''
 import time
 
 def start(good=0,bad=0,name=""):
-    name = describe_game(name) #ASSIGN A STRING TO A VARIABLE
+    name = describe_game(name)
     good,bad,name = first_event(good,bad,name)
 
 def describe_game(name):
     if name != "":
-        print("\nThanks for playing again, {}!".format(name)) #USE THE PRINT FUNCTION AND .format() NOTATION TO PRINT ASSIGNED VARIABLE
+        print("\nThanks for playing again, {}!".format(name))
     else:
         stop = True
-        while stop:#USE A "WHILE" LOOP
+        while stop:
             if name == "":
                 name = raw_input("What is your name? ").capitalize()
                 if name != "":
